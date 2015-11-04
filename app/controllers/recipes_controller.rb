@@ -27,6 +27,12 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
+  def like
+    @recipe = Recipe.find(params[:id])
+    Like.create(like: params[:like],chef: Chef.first,recipe: @recipe)
+    flash[:success] = "Your selection was successful"
+    redirect_to :back
+  end
   def update
     @recipe = Recipe.find(params[:id])
     if @recipe.update(recipe_params)
