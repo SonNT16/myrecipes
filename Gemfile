@@ -29,7 +29,7 @@ gem 'mini_magick', '3.8.0'
 gem 'will_paginate'
 gem 'bootstrap-will_paginate'
 gem 'bcrypt'
-gem 'fog', '1.23.0'
+gem 'fog'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
