@@ -1,0 +1,11 @@
+<%=	 render 'shared/errors', obj: @style %>
+<div class="raw">
+  <div class="well col-md-8 col-md-offset-2">
+    <%=	 form_for @style do |f| %>
+        <%=	 f.label :name %>
+        <%=	 f.text_field :name %>
+        <%=	 f.submit 'Crete Style', class: "btn btn-success" %>
+    <% end %>
+  </div>
+
+</div>
